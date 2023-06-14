@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>abiportfolio</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="profile.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="header-container">
+        <nav id="navbar">
+            <a href="index.html" class="logo">abi.c</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="profile">
+        <div class="container">
+            <div class="row">
+                <div class="profile-col-1">
+                    <img src="img/profile.JPG">
+                </div>
+                <div class="profile-col-2">
+                    <h1 class="subtitle">About me</h1><br>
+                    <p class="education">New York University Abu Dhabi<br>Film and New Media</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('language')">Language</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Film</span><br>Editing--DaVinci Resolve<br>Script writing<br>Scenic design</li>
+                            <li><span>Office</span><br>Google Suite</li>
+                            <li><span>Design</span><br>html/ css/ javascript<br>Photoshop/ Illustrator</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022</span><br>Assistant Stage Manager for Fall Production<br>Lighting Designer for Senior Theatre Capstone
+                                <br>Art Director for Senior Film Capstone<br>Actress for Senior Film Capstone</li>
+                            <li><span>2023</span><br>Dramaturg/Lighting designer for Theater Student Led Project
+                                <br>Treasurer for ElevatED --Student Interest Group<br>Events Coordinator for Chinese Language/Culture</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="language">
+                        <ul>
+                            <li><span>Chinese</span><br>Native</li>
+                            <li><span>English</span><br>Fluent</li>
+                            <li><span>German</span><br>Intermediate</li>
+                        </ul>
+                    </div>
+                    <div class="btn-box">
+                        <button class="profile-btn" onclick="location.href='work.html'">more on my work</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="footer">
+            <div class="footerContent">
+                <h3>Contact me</h3>
+                <div class="btn-contact">
+                    <a href="mailto:cc7679@nyu.edu" class="btn-email">cc7679@nyu.edu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
